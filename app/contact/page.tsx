@@ -39,15 +39,15 @@ export default function Contact() {
             <CardContent className="space-y-4">
               <div className="flex items-center">
                 <Phone className="mr-2" />
-                <span>(123) 456-7890</span>
+                <span>+233 530 914 141</span>
               </div>
               <div className="flex items-center">
                 <Mail className="mr-2" />
-                <span>info@primeproperties.com</span>
+                <span>23propertiess@gmail.com</span>
               </div>
               <div className="flex items-center">
                 <MapPin className="mr-2" />
-                <span>123 Real Estate Street, Cityville, State 12345</span>
+                <span>Mystical Rose, Clinic Street</span>
               </div>
             </CardContent>
           </Card>
