@@ -1,10 +1,14 @@
+"use client"
+
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { Button } from '@/components/ui/button';
 import { Phone, Mail, MapPin } from 'lucide-react';
+import { useForm, ValidationError } from '@formspree/react';
 
 export default function Contact() {
+  const [state, handleSubmit] = useForm("xbljjwzl");
   return (
     <div className="container mx-auto px-4 py-8">
       <h1 className="text-4xl font-bold mb-8 text-center">Contact Us</h1>
@@ -16,15 +20,41 @@ export default function Contact() {
             <CardTitle>Send Us a Message</CardTitle>
           </CardHeader>
           <CardContent>
-            <form className="space-y-4">
+            <form className="space-y-4" onSubmit={handleSubmit}>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                <Input placeholder="First Name" />
-                <Input placeholder="Last Name" />
+                <Input
+                  id="firstName"
+                  name="firstName"
+                  placeholder="First Name"
+                />
+                <Input
+                  id="lastName"
+                  name="lastName"
+                  placeholder="Last Name"
+                />
               </div>
-              <Input type="email" placeholder="Email" />
-              <Input placeholder="Subject" />
-              <Textarea placeholder="Your Message" rows={5} />
-              <Button type="submit" className="w-full">Send Message</Button>
+              <Input
+                id="email"
+                name="email"
+                type="email"
+                placeholder="Email"
+              />
+              <Input
+                id="subject"
+                name="subject"
+                placeholder="Subject"
+              />
+              <Textarea
+                id="textarea"
+                name="textarea"
+                placeholder="Your Message" rows={5}
+              />
+              <Button
+                type="submit"
+                className="w-full"
+                disabled={state.submitting}
+              >Send Message
+              </Button>
             </form>
           </CardContent>
         </Card>
