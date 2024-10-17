@@ -24,10 +24,10 @@ export default function About() {
             23 Properties was founded in 2022 with a vision to revolutionize the real estate industry. Our journey began with a small team of passionate individuals who believed in making the dream of homeownership accessible to everyone.
           </p>
           <p className="text-muted-foreground mb-4">
-            Over the years, we've grown into a leading real estate agency, known for our commitment to excellence, integrity, and customer satisfaction. Our team of expert agents combines years of experience with cutting-edge technology to provide unparalleled service to our clients.
+            Over the years, we've grown into a leading real estate agency&apos; known for our commitment to excellence, integrity, and customer satisfaction. Our team of expert agents combines years of experience with cutting-edge technology to provide unparalleled service to our clients.
           </p>
           <p className="text-muted-foreground">
-            At 23 Properties, we don't just sell houses; we help people find homes where memories are made and dreams come true.
+            At 23 Properties&apos; we don't just sell houses&apos; we help people find homes where memories are made and dreams come true.
           </p>
         </div>
       </div>
@@ -42,7 +42,7 @@ export default function About() {
             </CardTitle>
           </CardHeader>
           <CardContent>
-            <p>We put our clients' needs first, ensuring a personalized and satisfying experience throughout the real estate journey.</p>
+            <p>We put our clients&apos; needs first&apos; ensuring a personalized and satisfying experience throughout the real estate journey.</p>
           </CardContent>
         </Card>
         <Card>
