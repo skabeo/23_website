@@ -15,39 +15,48 @@ const Header = () => {
   return (
     <header className="bg-background shadow-md">
       <div className="container mx-auto px-4 py-4 flex justify-between items-center">
-        <Link href="/" className="text-2xl font-bold text-primary">
-          Prime Properties
+        <Link href="/"
+          className="text-2xl font-bold"
+          style={{ color: "#4B91F1" }}
+        >
+          23 Properties
         </Link>
         <NavigationMenu>
           <NavigationMenuList>
             <NavigationMenuItem>
               <Link href="/" legacyBehavior passHref>
-                <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                  <Home className="mr-2 h-4 w-4" />
+                <NavigationMenuLink className={navigationMenuTriggerStyle()} style={{ color: "#4B91F1" }}>
+                  <Home
+                    className="mr-2 h-4 w-4"
+                    style={{ color: "#4B91F1" }}
+                  />
                   Home
                 </NavigationMenuLink>
               </Link>
             </NavigationMenuItem>
             <NavigationMenuItem>
               <Link href="/about" legacyBehavior passHref>
-                <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                  <Info className="mr-2 h-4 w-4" />
+                <NavigationMenuLink className={navigationMenuTriggerStyle()} style={{ color: "#4B91F1" }}>
+                  <Info
+                    className="mr-2 h-4 w-4"
+                    style={{ color: "#4B91F1" }}
+                  />
                   About
                 </NavigationMenuLink>
               </Link>
             </NavigationMenuItem>
             <NavigationMenuItem>
               <Link href="/services" legacyBehavior passHref>
-                <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                  <Briefcase className="mr-2 h-4 w-4" />
+                <NavigationMenuLink className={navigationMenuTriggerStyle()} style={{ color: "#4B91F1" }}>
+                  <Briefcase className="mr-2 h-4 w-4" style={{ color: "#4B91F1" }} />
                   Services
                 </NavigationMenuLink>
               </Link>
             </NavigationMenuItem>
             <NavigationMenuItem>
               <Link href="/properties" legacyBehavior passHref>
-                <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                  <Building className="mr-2 h-4 w-4" />
+                <NavigationMenuLink className={navigationMenuTriggerStyle()} style={{ color: "#4B91F1" }}>
+                  <Building className="mr-2 h-4 w-4" style={{ color: "#4B91F1" }} />
                   Properties
                 </NavigationMenuLink>
               </Link>

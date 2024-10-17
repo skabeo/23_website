@@ -3,42 +3,8 @@ import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle }
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
-
-const properties = [
-  {
-    id: 1,
-    title: 'Modern Apartment',
-    description: 'Spacious 2-bedroom apartment with city views',
-    price: '$250,000',
-    location: 'Downtown',
-    type: 'Apartment',
-    bedrooms: 2,
-    bathrooms: 2,
-    area: '1,200 sqft',
-  },
-  {
-    id: 1,
-    title: 'Modern Apartment',
-    description: 'Spacious 2-bedroom apartment with city views',
-    price: '$250,000',
-    location: 'Downtown',
-    type: 'Cottage',
-    bedrooms: 2,
-    bathrooms: 2,
-    area: '1,200 sqft',
-  },
-  {
-    id: 1,
-    title: 'Modern Apartment',
-    description: 'Spacious 2-bedroom apartment with city views',
-    price: '$250,000',
-    location: 'Downtown',
-    type: 'Houses',
-    bedrooms: 2,
-    bathrooms: 2,
-    area: '1,200 sqft',
-  },
-];
+import properties from "@/components/utilis/detailedDatabase";
+import Link from 'next/link';
 
 export default function Properties() {
   return (
@@ -80,13 +46,13 @@ export default function Properties() {
           <Card key={property.id}>
             <CardHeader>
               <div className="w-full h-48 relative mb-4">
-                {/* <Image
-                  src={`https://source.unsplash.com/random/800x600?house,${property.id}`}
+                <Image
+                  src={property.image}
                   alt={property.title}
                   fill
                   style={{ objectFit: 'cover' }}
                   className="rounded-md"
-                /> */}
+                />
               </div>
               <CardTitle>{property.title}</CardTitle>
               <CardDescription>{property.description}</CardDescription>
@@ -101,7 +67,11 @@ export default function Properties() {
               </div>
             </CardContent>
             <CardFooter>
-              <Button className="w-full">View Details</Button>
+              <Link href={property.meqasa} target="_blank" className="w-full">
+                <Button className="w-full">
+                  View Details
+                </Button>
+              </Link>
             </CardFooter>
           </Card>
         ))}

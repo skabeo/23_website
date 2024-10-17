@@ -39,7 +39,7 @@ export default function Services() {
     <div className="container mx-auto px-4 py-8">
       <h1 className="text-4xl font-bold mb-8 text-center">Our Services</h1>
       <p className="text-xl text-muted-foreground mb-12 text-center">
-        At Prime Properties, we offer a comprehensive range of real estate services to meet all your needs.
+        At 23 Properties, we offer a comprehensive range of real estate services to meet all your needs.
       </p>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
