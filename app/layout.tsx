@@ -8,7 +8,7 @@ import Footer from '@/components/Footer';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'Prime Properties - Real Estate Agency',
+  title: '23 Properties - Real Estate Agency',
   description: 'Your trusted partner in finding your dream home',
 };
 
