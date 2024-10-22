@@ -32,6 +32,7 @@ const Header = () => {
               {item.label}
             </Link>
           ))}
+          <ModeToggle />
         </nav>
 
         {/* Mobile Navigation */}
